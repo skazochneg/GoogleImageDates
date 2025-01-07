@@ -4,13 +4,12 @@ Some time ago I needed to free up some space on my Google Drive.
 So I decided to extract all the pictures I have there. I uses Google Takeout process for this.
 Later I bought more space on Google Drive so I decided to put extracted images back there.
 
-But it seems that when you upload picture to Google photos, and then you amend the Taked Date image attribute, Google does not change the image file itself.
-It just creates some meta information connected to that image file somewhere.
-During the Takeout process you get images which maybe still with the wrong Date Taken attribute. 
-Google also suppolies meta information in the corresponding *.json files. 
+But it turned out that when you download pictures from Google using Takeout process, all the images dated the current date.
+So during the Takeout process you get images which maybe still with the wrong Date Taken attribute. 
 
+Google suppolies meta information about Date Taken in the corresponding *.json files. 
 So that every image.jpeg has a corresponding image.jpeg.json file when you make a Takeout process.
-When you put the image.jpeg back to Google Photos, Google sees the opriginal Taken Date image attribute, and I could not find any means to supply Google back with the information from the *.json file.
+When you put the image.jpeg back to Google Photos, Google sees the wrong Taken Date image attribute, and I could not find any means to supply Google back with the information from the *.json file.
 
 So I decided to modify the original image.jpeg files with the metadata supplied in *.json file and then upload the updated image.jpeg to Google Photos. 
 
@@ -27,5 +26,7 @@ There may be some exceptions which I did not catch.
 Also it works on Windows, not sure about *nix platforms. 
 
 Anton Permyakov
+
 07.01.2025
+
 Budva
